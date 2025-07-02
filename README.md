@@ -9,6 +9,27 @@ Un sitio web básico construido con Vite, React, React Router y Vitest para prue
 - **React Router**: Enrutamiento del lado del cliente para navegación en aplicaciones de una sola página
 - **Vitest**: Marco de pruebas unitarias rápido con soporte integrado
 
+## Estándares de Código
+
+### Requisitos Antes de Cada Commit
+- Ejecuta `npm run lint` para asegurarte de que el código cumpla con los estándares del proyecto
+- Asegúrate de que todos los componentes estén ubicados correctamente (`src/components` o `src/pages`)
+- Si agregas una nueva funcionalidad, actualiza el archivo `README.md`
+- Verifica que todas las pruebas unitarias pasen ejecutando `npm run test`
+- Si es necesario, actualiza `src/test/setup.js` para configurar el entorno de pruebas
+
+### Buenas Prácticas con JavaScript y React
+- Utiliza sintaxis moderna de JavaScript (ES6+) y componentes funcionales de React
+- Usa Hooks de React (`useState`, `useEffect`, etc.) cuando sea apropiado
+- Mantén los componentes modulares y que sigan el principio de responsabilidad única
+- Los componentes reutilizables deben estar en `src/components/`
+- Los componentes que representan páginas completas deben ir en `src/pages/`
+
+### Estilos
+- Prioriza el uso de clases de bootstrap siempre que sea posible. Si es necesario, puedes definir clases personalizadas de bootstrap. Crear CSS personalizado debe ser la última opción.
+- Prefiere los estilos en línea con clases utilitarias en JSX; usa `App.css` o `index.css` solo como respaldo
+
+
 ## Ejecución del programa
 
 ### Requisitos Previos
