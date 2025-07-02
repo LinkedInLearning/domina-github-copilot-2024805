@@ -1,88 +1,88 @@
-# Travel Agency Demo
+# Demostración de Agencia de Viajes
 
-A basic website built with Vite, React, React Router, and Vitest for testing.
+Un sitio web básico construido con Vite, React, React Router y Vitest para pruebas.
 
 ## Features
 
-- **Vite**: Fast build tool and development server
-- **React**: Modern UI library for building user interfaces
-- **React Router**: Client-side routing for single-page application navigation
-- **Vitest**: Fast unit testing framework with built-in support
+- **Vite**: Herramienta de construcción rápida y servidor de desarrollo
+- **React**: Biblioteca moderna para construir interfaces de usuario
+- **React Router**: Enrutamiento del lado del cliente para navegación en aplicaciones de una sola página
+- **Vitest**: Marco de pruebas unitarias rápido con soporte integrado
 
-## Getting Started
+## Ejecución del programa
 
-### Prerequisites
+### Requisitos Previos
 
-- Node.js (version 16 or higher)
+- Node.js (versión 16 o superior)
 - npm
 
-### Installation
+### Instalación
 
-1. Clone the repository
-2. Install dependencies:
+1. Clona el repositorio
+2. Instala las dependencias:
    ```bash
    npm install
    ```
 
-### Development
+### Desarrollo
 
-Start the development server:
+Inicia el servidor de desarrollo:
 ```bash
 npm run dev
 ```
 
-Visit http://localhost:5173 to view the application.
+Visita http://localhost:5173 para ver la aplicación.
 
-### Testing
+### Pruebas
 
-Run tests:
+Ejecuta las pruebas:
 ```bash
 npm run test
 ```
 
-Run tests once (CI mode):
+Ejecuta las pruebas una vez (modo CI):
 ```bash
 npm run test:run
 ```
 
-### Building
+### Construcción
 
-Build for production:
+Construye para producción:
 ```bash
 npm run build
 ```
 
-Preview production build:
+Vista previa de la construcción para producción:
 ```bash
 npm run preview
 ```
 
-### Linting
+### Linter
 
-Check code quality:
+Verifica la calidad del código:
 ```bash
 npm run lint
 ```
 
-## Project Structure
+## Estructura del Proyecto
 
 ```
 src/
-├── components/          # Reusable UI components
-├── pages/              # Page components
-│   ├── Home.jsx        # Home page
-│   ├── About.jsx       # About page
-│   └── Contact.jsx     # Contact page
-├── test/               # Test configuration
-│   └── setup.js        # Test setup file
-├── App.jsx             # Main application component
-├── App.css             # Application styles
-├── main.jsx            # Application entry point
-└── index.css           # Global styles
+├── components/         # Componentes de UI reutilizables
+├── pages/              # Componentes de página
+│   ├── Home.jsx        # Página de inicio
+│   ├── About.jsx       # Página sobre nosotros
+│   └── Contact.jsx     # Página de contacto
+├── test/               # Configuración de pruebas
+│   └── setup.js        # Archivo de configuración de pruebas
+├── App.jsx             # Componente principal de la aplicación
+├── App.css             # Estilos de la aplicación
+├── main.jsx            # Punto de entrada de la aplicación
+└── index.css           # Estilos globales
 ```
 
-## Available Routes
+## Rutas Disponibles
 
-- `/` - Home page with destination highlights
-- `/about` - About the travel agency
-- `/contact` - Contact information and form
+- `/` - Página de inicio con destacados de destinos
+- `/about` - Sobre la agencia de viajes
+- `/contact` - Información de contacto y formulario
