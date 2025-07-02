@@ -8,10 +8,13 @@ import HeaderBar from './components/HeaderBar'
 
 function App() {
 
-  function sumDigits(a, b) {
-    // Ensure the inputs are numbers and return their sum
-    return Number(a) + Number(b);
+  function procesar(a, b) {
+    var array = [1];
+    var nuevoarray = _.concat(array, 2, [3], [[4]]);
+    return nuevoarray;
   }
+
+
 
   return (
     <div className="App  container ">
@@ -24,6 +27,7 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/destinos" element={<Destinos />} />
         </Routes>
+        <button onClick={procesar}> Test </button>
       </main>
     </div>
   )
