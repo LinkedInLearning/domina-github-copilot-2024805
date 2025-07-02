@@ -6,6 +6,7 @@ function HeaderBar() {
                 <Link className="navbar-brand text-white" to="/">Viajes Odisea IA</Link>
                 <div className="navbar-nav ">
                     <Link className="nav-link text-white" to="/">Home</Link>
+                    <Link className="nav-link text-white" to="/destinos">Destinos</Link>
                     <Link className="nav-link text-white" to="/nosotros">Nosotros</Link>
                     <Link className="nav-link text-white" to="/contacto">Contacto</Link>
                 </div>

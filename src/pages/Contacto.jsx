@@ -30,6 +30,14 @@ const Contacto = () => {
         return '';
     };
 
+    // Nueva función para limpiar los datos del formulario
+    const handleClear = () => {
+        setName('');
+        setEmail('');
+        setMessage('');
+        setErrors({});
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
         const nameError = validateName();
@@ -93,12 +101,11 @@ const Contacto = () => {
                     {errors.message && <div className="invalid-feedback">{errors.message}</div>}
                 </div>
                 <button type="submit" className="btn btn-success">Enviar Datos</button>
-                
+                <button type="button" className="btn btn-secondary ms-2" onClick={handleClear}>
+                    Borrar Datos
+                </button>
             </form>
         </div>
-
-
-
 
     );
 };
