@@ -24,10 +24,14 @@ const Contacto = () => {
     };
 
     const handleClear = () => {
-        setName('');
-        setEmail('');
-        setMessage('');
-        setErrors({});
+        try {
+            setName('');
+            setEmail('');
+            setMessage('');
+            setErrors({});
+        } catch (error) {
+            console.error('Error al limpiar el formulario:', error);
+        }
     };
 
     const validateMessage = () => {
