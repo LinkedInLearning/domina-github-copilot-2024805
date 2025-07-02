@@ -5,6 +5,7 @@ import Contacto from './pages/Contacto'
 import Destinos from './pages/Destinos';
 import './App.css'
 import HeaderBar from './components/HeaderBar'
+import _ from 'lodash';
 
 function App() {
 
@@ -13,7 +14,6 @@ function App() {
     var nuevoarray = _.concat(array, 2, [3], [[4]]);
     return nuevoarray;
   }
-
 
 
   return (
