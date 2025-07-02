@@ -23,19 +23,22 @@ const Contacto = () => {
         return '';
     };
 
+    const handleClear = () => {
+        try {
+            setName('');
+            setEmail('');
+            setMessage('');
+            setErrors({});
+        } catch (error) {
+            console.error('Error al limpiar el formulario:', error);
+        }
+    };
+
     const validateMessage = () => {
         if (message.trim() === '') {
             return 'El mensaje es obligatorio';
         }
         return '';
-    };
-
-    // Nueva función para limpiar los datos del formulario
-    const handleClear = () => {
-        setName('');
-        setEmail('');
-        setMessage('');
-        setErrors({});
     };
 
     const handleSubmit = (e) => {
@@ -101,11 +104,18 @@ const Contacto = () => {
                     {errors.message && <div className="invalid-feedback">{errors.message}</div>}
                 </div>
                 <button type="submit" className="btn btn-success">Enviar Datos</button>
-                <button type="button" className="btn btn-secondary ms-2" onClick={handleClear}>
-                    Borrar Datos
+                <button
+                    type="button"
+                    className="btn btn-secondary ms-2"
+                    onClick={handleClear}
+                >
+                    Borrar
                 </button>
             </form>
         </div>
+
+
+
 
     );
 };
