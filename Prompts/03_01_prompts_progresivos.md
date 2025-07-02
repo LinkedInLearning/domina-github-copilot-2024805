@@ -1,0 +1,7 @@
+- Crea un componente funcional llamado Destinos
+- Crea una ruta llamada 'destinos' en #file:App.jsx que invoque al componente Destinos
+- Crea un array JSON con 10 destinos turísticos en Asia; cada uno debe tener nombre, descripción y un ID
+- Genera una lista iterando en los ítems del array.
+- Cada ítem de la lista debe ser un componente llamado ItemLista
+- En un documento nuevo, crea un componente funcional llamado ItemLista
+- El componente ItemLista debe recibir por parámetros sus valores y renderizarlos internamente.
