@@ -7,10 +7,16 @@ import './App.css'
 import HeaderBar from './components/HeaderBar'
 
 function App() {
+
+  function sumDigits(a, b) {
+    // Ensure the inputs are numbers and return their sum
+    return Number(a) + Number(b);
+  }
+
   return (
     <div className="App  container ">
-      
-      <HeaderBar /> 
+
+      <HeaderBar />
       <main className='p-4 bg-light'>
         <Routes>
           <Route path="/" element={<Home />} />
