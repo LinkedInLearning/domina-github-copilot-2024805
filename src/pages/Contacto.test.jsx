@@ -19,22 +19,30 @@ describe('Contacto Component', () => {
         expect(nameInput.value).toBe('Test Name');
     });
 
-    it('limpia los datos del formulario al hacer clic en el botón de borrado', () => {
+
+        it('clears the form when the "Borrar" button is clicked', () => {
         render(<Contacto />);
         
-        // Arrange: Llenar los campos del formulario
+        // Get form inputs
         const nameInput = screen.getByLabelText('Nombre:');
         const emailInput = screen.getByLabelText('Correo Electrónico:');
         const messageInput = screen.getByLabelText('Mensaje:');
+        
+        // Fill the form with data
         fireEvent.change(nameInput, { target: { value: 'Test Name' } });
         fireEvent.change(emailInput, { target: { value: 'test@example.com' } });
-        fireEvent.change(messageInput, { target: { value: 'Test Message' } });
-
-        // Act: Hacer clic en el botón de borrado
-        const clearButton = screen.getByText('Borrar Datos');
+        fireEvent.change(messageInput, { target: { value: 'Test message' } });
+        
+        // Verify inputs have values
+        expect(nameInput.value).toBe('Test Name');
+        expect(emailInput.value).toBe('test@example.com');
+        expect(messageInput.value).toBe('Test message');
+        
+        // Get and click the Borrar button
+        const clearButton = screen.getByText('Borrar');
         fireEvent.click(clearButton);
-
-        // Assert: Verificar que los campos estén vacíos
+        
+        // Verify inputs are cleared
         expect(nameInput.value).toBe('');
         expect(emailInput.value).toBe('');
         expect(messageInput.value).toBe('');
