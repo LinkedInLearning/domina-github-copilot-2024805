@@ -69,14 +69,21 @@ npm run lint
 ```
 src/
 ├── components/         # Componentes de UI reutilizables
+│   ├── Destino.jsx     # Componente para mostrar un destino
+│   ├── Destino.test.jsx # Pruebas unitarias para el componente Destino
+│   ├── HeaderBar.jsx   # Barra de encabezado
+│   ├── ItemLista.jsx   # Componente para elementos de lista
 ├── pages/              # Componentes de página
 │   ├── Home.jsx        # Página de inicio
-│   ├── About.jsx       # Página sobre nosotros
-│   └── Contact.jsx     # Página de contacto
+│   ├── Nosotros.jsx    # Página sobre nosotros
+│   ├── Contacto.jsx    # Página de contacto
+│   ├── Contacto.test.jsx # Pruebas unitarias para la página de contacto
+│   ├── Destinos.jsx    # Página de destinos
 ├── test/               # Configuración de pruebas
 │   └── setup.js        # Archivo de configuración de pruebas
 ├── App.jsx             # Componente principal de la aplicación
 ├── App.css             # Estilos de la aplicación
+├── App.test.jsx        # Pruebas unitarias para el componente principal
 ├── main.jsx            # Punto de entrada de la aplicación
 └── index.css           # Estilos globales
 ```
@@ -84,5 +91,6 @@ src/
 ## Rutas Disponibles
 
 - `/` - Página de inicio con destacados de destinos
-- `/about` - Sobre la agencia de viajes
-- `/contact` - Información de contacto y formulario
+- `/nosotros` - Sobre la agencia de viajes
+- `/contacto` - Información de contacto y formulario
+- `/destinos` - Explora los destinos disponibles
