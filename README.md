@@ -1,7 +1,7 @@
 # COURSENAME
 This is the repository for the LinkedIn Learning course `course-name`. The full course is available from [LinkedIn Learning][lil-course-url].
 
-![course-name-alt-text][lil-thumbnail-url] 
+![Domina GitHub Copilot][lil-thumbnail-url] 
 
 _See the readme file in the main branch for updated instructions and information._
 ## Instructions
@@ -46,6 +46,6 @@ To resolve this issue:
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQG0eDHsyOSqTA/learning-public-crop_675_1200/B4EZVdqqdwHUAY-/0/1741033220778?e=2147483647&v=beta&t=FxUDo6FA8W8CiFROwqfZKL_mzQhYx9loYLfjN-LNjgA
+[lil-course-url]: https://www.linkedin.com/learning/domina-github-copilot
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQGUPRMYaLpEIA/learning-public-crop_675_1200/B4EZgr8mbrGYAY-/0/1753083963921?e=2147483647&v=beta&t=glqEHI6NXJmTavOVfSz1g6d3vazdnmri9eAQvRXwpOE
 
