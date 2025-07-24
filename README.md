@@ -1,5 +1,5 @@
 # COURSENAME
-This is the repository for the LinkedIn Learning course `course-name`. The full course is available from [LinkedIn Learning][lil-course-url].
+This is the repository for the LinkedIn Learning course `Domina GitHub Copilot`. The full course is available from [LinkedIn Learning][lil-course-url].
 
 ![Domina GitHub Copilot][lil-thumbnail-url] 
 
